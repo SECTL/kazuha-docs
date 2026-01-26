@@ -4,9 +4,13 @@ import 'viewerjs/dist/viewer.css'
 import { onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
 import './style.css'
+import ImageRow from './components/ImageRow.vue'
 
 export default {
   extends: DefaultTheme,
+  enhanceApp({ app }) {
+    app.component('ImageRow', ImageRow)
+  },
   setup() {
     const route = useRoute()
     let viewer = null
