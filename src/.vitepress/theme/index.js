@@ -3,13 +3,19 @@ import Viewer from 'viewerjs'
 import 'viewerjs/dist/viewer.css'
 import { onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
-import './style.css'
+import './style/index.css'
+import Layout from './components/Layout.vue'
 import ImageRow from './components/ImageRow.vue'
+import HomeUnderline from './components/HomeUnderline.vue'
+import ArticleMetadata from "./components/ArticleMetadata.vue"
 
 export default {
   extends: DefaultTheme,
+  Layout: Layout,
   enhanceApp({ app }) {
     app.component('ImageRow', ImageRow)
+    app.component('HomeUnderline', HomeUnderline)
+    app.component('ArticleMetadata', ArticleMetadata)
   },
   setup() {
     const route = useRoute()
