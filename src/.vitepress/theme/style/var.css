@@ -1,16 +1,9 @@
 :root {
+  --vp-layout-max-width: 1600px;
   --vp-c-brand-1: #7A96A2;
   --vp-c-brand-2: #65808c;
   --vp-c-brand-3: #526a76;
-}
 
-.dark {
-  --vp-c-brand-1: #a5c4d4;
-  --vp-c-brand-2: #8db5c8;
-  --vp-c-brand-3: #759ab5;
-}
-
-:root {
   /* hero标题渐变色 */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #009ef0, #01e7f0);
@@ -20,6 +13,12 @@
   --vp-home-hero-image-filter: blur(40px);
 }
 
+.dark {
+  --vp-c-brand-1: #a5c4d4;
+  --vp-c-brand-2: #8db5c8;
+  --vp-c-brand-3: #759ab5;
+}
+
 /* VPFeatures 页卡悬浮效果 */
 .VPFeatures .items .item {
   transition: transform 0.3s;
@@ -27,4 +26,16 @@
 
 .VPFeatures .items .item:hover {
   transform: translateY(-5px);
+}
+
+.link-text-value {
+  justify-content: flex-end;
+}
+.content-container {
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+.outline-link.active {
+  color: var(--vp-c-brand-1) !important;
 }
