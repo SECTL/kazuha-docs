@@ -132,6 +132,10 @@ export default defineConfig({
       next: '下一页'
     },
 
+    lastUpdated: {
+      text: '最后更新于'
+    },
+
     notFound: {
       title: '页面未找到',
       quote:
