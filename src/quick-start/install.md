@@ -2,7 +2,7 @@
 
 ## 下载
 
-1. 打开 [Kazuha 发布页](https://github.com/SECTL/Kazuha/releases)，访问不了可通过[第三方 GitHub 加速](https://ghproxy.jursin.top/?url=https://github.com/SECTL/Kazuha&fetchReleases=true)下载。
+1. 打开 [Kazuha 发布页](https://github.com/SECTL/Kazuha/releases)，访问不了可通过[组织储存库下载](https://stk.sectl.top/Kazuha)下载（注意：请下载最新版本）
 
    ![发布页预览](/images/install/1.png)
 
