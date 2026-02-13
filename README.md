@@ -1,6 +1,6 @@
-# Kazuha-documents
+# Kazuha-docs
 
-这是 [Kazuha](https://github.com/Haraguse/kazuha) 文档仓库，使用 VitePress 框架
+这是 [Kazuha](https://github.com/SECTL/kazuha) 文档仓库，使用 VitePress 框架
 
 ## 安装
 
@@ -32,6 +32,6 @@ npm run build
 npm run preview
 ```
 ## 贡献者
-<a href="https://github.com/Haraguse/kazuha-documents/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Haraguse/kazuha-documents" />
+<a href="https://github.com/SECTL/kazuha-docs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SECTL/kazuha-docs" />
 </a>
