@@ -10,7 +10,7 @@ export default defineConfig({
     ['link',{ rel: 'icon', href: '/logo.png'}],
   ],
   sitemap: {
-    hostname: 'https://kazuha-docs.classos.xin/',
+    hostname: 'https://kazuha.sectl.top',
   },
   themeConfig: {
     logo: '/logo.svg',
