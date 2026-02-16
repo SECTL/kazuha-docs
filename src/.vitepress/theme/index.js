@@ -16,6 +16,11 @@ export default {
     app.component('ImageRow', ImageRow)
     app.component('HomeUnderline', HomeUnderline)
     app.component('ArticleMetadata', ArticleMetadata)
+    if (typeof window !== 'undefined') {
+      const iconifyScript = document.createElement('script');
+      iconifyScript.src = 'https://code.iconify.design/3/3.1.0/iconify.min.js';
+      document.head.appendChild(iconifyScript);
+    }
   },
   setup() {
     const route = useRoute()

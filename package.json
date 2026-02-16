@@ -6,12 +6,10 @@
     "build": "vitepress build src",
     "preview": "vitepress preview src"
   },
-  "engines": {
-    "node": "22.x"
-  },
   "devDependencies": {
+    "@iconify/vue": "^5.0.0",
     "vitepress": "^1.6.4",
-    "vue": "^3.5.27"
+    "vue": "^3.5.28"
   },
   "dependencies": {
     "viewerjs": "^1.11.7"

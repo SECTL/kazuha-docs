@@ -17,24 +17,24 @@ export default defineConfig({
     
     // 导航栏
     nav: [
-      { text: '快速开始', link: '/quick-start/' },
+      { text: '<span class="iconify" data-icon="icon-park-outline:guide-board"></span> 快速开始', link: '/quick-start/' },
       {
-        text: '功能',
+        text: '<span class="iconify" data-icon="iconoir:box-iso"></span> 功能',
         items: [
-          { text: '覆盖窗口', link: '/features/overlay-window' },
+          { text: '<span class="iconify" data-icon="fluent:window-28-regular"></span> 覆盖窗口', link: '/features/overlay-window' },
           { 
             text: '设置',
             collapsed: false,
             items: [
-              { text: '常规', link: '/features/settings/general' },
-              { text: '主题', link: '/features/settings/theme' },
-              { text: '全局应用字体', link: '/features/settings/font' },
-              { text: '放映', link: '/features/settings/present' },
-              { text: '工具栏', link: '/features/settings/toolbar' }
+              { text: '<span class="iconify" data-icon="uil:setting"></span> 常规', link: '/features/settings/general' },
+              { text: '<span class="iconify" data-icon="mdi:color"></span> 主题', link: '/features/settings/theme' },
+              { text: '<span class="iconify" data-icon="gravity-ui:font-case"></span> 全局应用字体', link: '/features/settings/font' },
+              { text: '<span class="iconify" data-icon="icon-park-outline:ppt"></span> 放映', link: '/features/settings/present' },
+              { text: '<span class="iconify" data-icon="tabler:device-ipad-horizontal"></span> 工具栏', link: '/features/settings/toolbar' }
             ]
           },
-          { text: '计时器', link: '/features/timer' },
-          { text: '聚光灯', link: '/features/spotlight' }
+          { text: '<span class="iconify" data-icon="material-symbols:timer-rounded"></span> 计时器', link: '/features/timer' },
+          { text: '<span class="iconify" data-icon="iconoir:square-cursor"></span> 聚光灯', link: '/features/spotlight' }
         ]
       },
     ],
@@ -42,35 +42,35 @@ export default defineConfig({
     // 侧边栏
     sidebar: [
       {
-        text: '快速开始',
+        text: '<span class="iconify" data-icon="icon-park-outline:guide-board"></span> 快速开始',
         collapsed: false,
         items: [
-          { text: '准备工作', link: '/quick-start/prepare' },
-          { text: '下载与安装', link: '/quick-start/install' },
+          { text: '<span class="iconify" data-icon="ep:guide"></span> 准备工作', link: '/quick-start/prepare' },
+          { text: '<span class="iconify" data-icon="material-symbols:download-rounded"></span> 下载与安装', link: '/quick-start/install' },
         ]
       },
       {
-        text: '功能',
+        text: '<span class="iconify" data-icon="iconoir:box-iso"></span> 功能',
         collapsed: false,
         items: [
-          { text: '覆盖窗口', link: '/features/overlay-window' },
+          { text: '<span class="iconify" data-icon="fluent:window-28-regular"></span> 覆盖窗口', link: '/features/overlay-window' },
           { 
             text: '设置',
             collapsed: false,
             items: [
-              { text: '常规', link: '/features/settings/general' },
-              { text: '主题', link: '/features/settings/theme' },
-              { text: '全局应用字体', link: '/features/settings/font' },
-              { text: '放映', link: '/features/settings/present' },
-              { text: '工具栏', link: '/features/settings/toolbar' }
+              { text: '<span class="iconify" data-icon="uil:setting"></span> 常规', link: '/features/settings/general' },
+              { text: '<span class="iconify" data-icon="mdi:color"></span> 主题', link: '/features/settings/theme' },
+              { text: '<span class="iconify" data-icon="gravity-ui:font-case"></span> 全局应用字体', link: '/features/settings/font' },
+              { text: '<span class="iconify" data-icon="icon-park-outline:ppt"></span> 放映', link: '/features/settings/present' },
+              { text: '<span class="iconify" data-icon="tabler:device-ipad-horizontal"></span> 工具栏', link: '/features/settings/toolbar' }
             ]
           },
-          { text: '计时器', link: '/features/timer' },
-          { text: '聚光灯', link: '/features/spotlight' }
+          { text: '<span class="iconify" data-icon="material-symbols:timer-rounded"></span> 计时器', link: '/features/timer' },
+          { text: '<span class="iconify" data-icon="iconoir:square-cursor"></span> 聚光灯', link: '/features/spotlight' }
         ]
       },
       {
-        text: '杂事',
+        text: '<span class="iconify" data-icon="tabler:boom"></span> 杂事',
         link: '/misc/README.md'
       }
     ],
