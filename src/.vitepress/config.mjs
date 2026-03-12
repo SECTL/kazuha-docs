@@ -37,6 +37,7 @@ export default defineConfig({
           { text: '<span class="iconify" data-icon="iconoir:square-cursor"></span> 聚光灯', link: '/features/spotlight' }
         ]
       },
+      { text: '<span class="iconify" data-icon="iconoir:code"></span> 开发', link: '/development/' },
     ],
 
     // 侧边栏
@@ -67,6 +68,13 @@ export default defineConfig({
           },
           { text: '<span class="iconify" data-icon="material-symbols:timer-rounded"></span> 计时器', link: '/features/timer' },
           { text: '<span class="iconify" data-icon="iconoir:square-cursor"></span> 聚光灯', link: '/features/spotlight' }
+        ]
+      },
+      {
+        text: '<span class="iconify" data-icon="iconoir:code"></span> 开发',
+        collapsed: false,
+        items: [
+          { text: '<span class="iconify" data-icon="mdi:palette"></span> 主题与 Splash', link: '/development/' },
         ]
       },
       {
