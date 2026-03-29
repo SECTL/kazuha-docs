@@ -2,11 +2,11 @@
 
 ## 下载
 
-1. 访问 [Kazuha 发布页](https://github.com/SECTL/Kazuha/releases)（访问不了可通过[组织储存库](https://stk.sectl.top/Kazuha)下载，推荐下载**最新版本**）
+1. 访问 [Luminalium 发布页](https://github.com/SECTL/Luminalium/releases)（访问不了可通过[组织储存库](https://stk.sectl.top/Luminalium)下载，推荐下载**最新版本**）
 
    ![发布页](/images/install/1.png)
 
-2. 下载[最新发行版](https://github.com/SECTL/Kazuha/releases/latest)中的便携版压缩包
+2. 下载[最新发行版](https://github.com/SECTL/Luminalium/releases/latest)中的便携版压缩包
 
    ![资源](/images/install/2.png)
 
@@ -20,7 +20,7 @@
 
 ## 安装与启动
 
-1. 解压后，双击 `Kazuha.exe` 启动程序。 
+1. 解压后，双击 `Luminalium.exe` 启动程序。 
    正常情况会看到如下启动界面：
 
    ![启动界面](/images/install/4.png)

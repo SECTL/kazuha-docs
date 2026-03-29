@@ -2,19 +2,19 @@
 layout: home
 
 hero:
-  name: Kazuha
+  name: Luminalium
   text: 幻灯片演示助手工具
   tagline: 提供简洁、高效的演示体验
   image:
     src: /logo.svg
-    alt: Kazuha Logo
+    alt: Luminalium Logo
   actions:
     - theme: brand
       text: 快速开始 →
       link: quick-start
     - theme: alt
       text: Github 仓库
-      link: https://github.com/SECTL/Kazuha
+      link: https://github.com/SECTL/Luminalium
     - theme: alt
       text: SECTL 网站
       link: https://sectl.top/

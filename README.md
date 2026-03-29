@@ -1,6 +1,6 @@
-# Kazuha-docs
+# Luminalium-docs
 
-这是 [Kazuha](https://github.com/SECTL/kazuha) 文档仓库，使用 VitePress 框架
+这是 [Luminalium](https://github.com/SECTL/Luminalium) 文档仓库，使用 VitePress 框架
 
 ## 安装
 
@@ -32,6 +32,6 @@ npm run build
 npm run preview
 ```
 ## 贡献者
-<a href="https://github.com/SECTL/kazuha-docs/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SECTL/kazuha-docs" />
+<a href="https://github.com/SECTL/Luminalium-docs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SECTL/Luminalium-docs" alt="Contributors" />
 </a>
