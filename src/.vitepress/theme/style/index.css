@@ -1,6 +1,4 @@
 @import './var.css';
-@import './blockquote.css';
-@import './custom-block.css';
 
 .guide-card-grid {
   display: grid;
