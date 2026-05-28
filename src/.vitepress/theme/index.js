@@ -3,31 +3,29 @@ import Viewer from 'viewerjs'
 import 'viewerjs/dist/viewer.css'
 import { onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
-import './style.css'
-import ImageRow from './components/ImageRow.vue'
+import './style/index.css'
+import GuideHeader from './components/GuideHeader.vue'
+import GuideCard from './components/GuideCard.vue'
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
-    app.component('ImageRow', ImageRow)
+    app.component('GuideHeader', GuideHeader)
+    app.component('GuideCard', GuideCard)
   },
   setup() {
     const route = useRoute()
     let viewer = null
 
     const initViewer = () => {
-      // Clean up previous instance
       if (viewer) {
         viewer.destroy()
         viewer = null
       }
-      
-      // Find the content container
+
       const doc = document.querySelector('.vp-doc')
       if (!doc) return
 
-      // Initialize Viewer.js on the container
-      // This will automatically pick up all images inside .vp-doc
       viewer = new Viewer(doc, {
         button: true,
         navbar: true,
@@ -41,14 +39,14 @@ export default {
         transition: true,
         fullscreen: true,
         keyboard: true,
-        url: 'src', // Use src attribute for high-res image if available
+        url: 'src',
       })
     }
 
     onMounted(() => {
       initViewer()
     })
-    
+
     watch(
       () => route.path,
       () => nextTick(() => initViewer())

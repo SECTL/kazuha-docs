@@ -2,18 +2,14 @@
 layout: home
 
 hero:
-  name: Kazuha
-  text: 适用于幻灯片放映下的演示助手工具。
-  tagline: 文档写的比较烂，爱看不看。
-  image:
-    src: /logo.svg
-    alt: Kazuha Logo
+  name: 荧素万演 文档
+  tagline: 一款为大型可触摸式屏幕设计的、方便快捷的、高度客制化的演示助手工具。
   actions:
     - theme: brand
       text: 快速开始 →
-      link: quick-start\README.md
+      link: quick-start
     - theme: alt
-      text: Github
-      link: https://github.com/Haraguse/Kazuha
+      text: Github 仓库
+      link: https://github.com/SECTL/Luminalium
 
 ---
