@@ -39,3 +39,129 @@
 .outline-link.active {
   color: var(--vp-c-brand-1) !important;
 }
+
+/* 所有图片添加圆角和灰色细内描边 */
+img {
+  border-radius: 8px;
+  outline: 1px solid rgba(128, 128, 128, 0.35);
+  outline-offset: -1px;
+}
+
+/* ===== 页面切换动画 ===== */
+
+#VPContent {
+  transition: opacity 0.25s cubic-bezier(0.1, 0.9, 0.2, 1),
+              transform 0.25s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.page-exit {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.page-enter-back {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.page-stable {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.VPSidebar {
+  transition: transform 0.25s cubic-bezier(0.1, 0.9, 0.2, 1),
+              opacity 0.25s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.VPNavBarMenuLink {
+  position: relative;
+}
+
+.VPNavBarMenuLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--vp-c-brand-1);
+  border-radius: 2px 2px 0 0;
+  transition: width 0.2s cubic-bezier(0.1, 0.9, 0.2, 1),
+              left 0.2s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.VPNavBarMenuLink:hover::after,
+.VPNavBarMenuLink.active::after {
+  width: 60%;
+  left: 20%;
+}
+
+.VPSidebarItem .indicator {
+  transition: background-color 0.2s cubic-bezier(0.1, 0.9, 0.2, 1),
+              transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.VPSidebarItem.is-active .indicator {
+  transform: scaleY(1.15);
+}
+
+.vp-doc > * {
+  animation: winSlideIn 0.3s cubic-bezier(0.1, 0.9, 0.2, 1) both;
+}
+
+.vp-doc > *:nth-child(1) { animation-delay: 0.02s; }
+.vp-doc > *:nth-child(2) { animation-delay: 0.04s; }
+.vp-doc > *:nth-child(3) { animation-delay: 0.06s; }
+.vp-doc > *:nth-child(4) { animation-delay: 0.08s; }
+.vp-doc > *:nth-child(5) { animation-delay: 0.10s; }
+.vp-doc > *:nth-child(6) { animation-delay: 0.12s; }
+.vp-doc > *:nth-child(7) { animation-delay: 0.14s; }
+.vp-doc > *:nth-child(8) { animation-delay: 0.16s; }
+.vp-doc > *:nth-child(9) { animation-delay: 0.18s; }
+.vp-doc > *:nth-child(10) { animation-delay: 0.20s; }
+
+@keyframes winSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPButton,
+.VPFeatures .items .item {
+  transition: transform 0.15s cubic-bezier(0.1, 0.9, 0.2, 1),
+              box-shadow 0.15s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.VPButton:active,
+.VPFeatures .items .item:active {
+  transform: scale(0.96);
+}
+
+.VPNavBarSearchButton {
+  transition: background-color 0.15s cubic-bezier(0.1, 0.9, 0.2, 1),
+              transform 0.15s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.VPNavBarSearchButton:hover {
+  transform: scale(1.03);
+}
+
+.VPBackToTopButton {
+  transition: transform 0.2s cubic-bezier(0.1, 0.9, 0.2, 1),
+              opacity 0.2s cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+.VPBackToTopButton:hover {
+  transform: translateY(-3px);
+}

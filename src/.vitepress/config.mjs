@@ -87,7 +87,6 @@ export default defineConfig({
         items: [
           { text: '顶层窗口主题', link: '/develop/top-window-theme', icon: 'layers' },
           { text: '启动画面主题', link: '/develop/startup-screen-theme', icon: 'monitor' },
-          { text: 'Uri 协议', link: '/develop/uri-protocol', icon: 'link' },
           { text: '结语', link: '/develop/conclusion', icon: 'flag' }
         ]
       }
