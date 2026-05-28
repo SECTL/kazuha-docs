@@ -3,24 +3,13 @@ import Viewer from 'viewerjs'
 import 'viewerjs/dist/viewer.css'
 import { onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
-import './style/index.css'
-import Layout from './components/Layout.vue'
+import './style.css'
 import ImageRow from './components/ImageRow.vue'
-import HomeUnderline from './components/HomeUnderline.vue'
-import ArticleMetadata from "./components/ArticleMetadata.vue"
 
 export default {
   extends: DefaultTheme,
-  Layout: Layout,
   enhanceApp({ app }) {
     app.component('ImageRow', ImageRow)
-    app.component('HomeUnderline', HomeUnderline)
-    app.component('ArticleMetadata', ArticleMetadata)
-    if (typeof window !== 'undefined') {
-      const iconifyScript = document.createElement('script');
-      iconifyScript.src = 'https://code.iconify.design/3/3.1.0/iconify.min.js';
-      document.head.appendChild(iconifyScript);
-    }
   },
   setup() {
     const route = useRoute()
