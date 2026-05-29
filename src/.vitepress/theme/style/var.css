@@ -4,6 +4,8 @@
   --vp-c-brand-2: #5F74D2;
   --vp-c-brand-3: #6C65D5;
 
+  --banner-height: 40px;
+
   /* hero标题渐变色 */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #4781CE, #6C65D5);

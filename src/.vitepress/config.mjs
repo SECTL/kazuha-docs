@@ -15,6 +15,13 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/logo.svg',
+
+    banner: {
+      enable: true,
+      text: '此文档依旧处于未完工状态，有部分纰漏也请海涵。',
+      link: '',
+      closable: false,
+    },
     
     // 导航栏
     nav: [

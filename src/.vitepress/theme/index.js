@@ -4,6 +4,7 @@ import 'viewerjs/dist/viewer.css'
 import { onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
 import './style/index.css'
+import Layout from './Layout.vue'
 import GuideHeader from './components/GuideHeader.vue'
 import GuideCard from './components/GuideCard.vue'
 import VPNavBarMenuLink from './components/VPNavBarMenuLink.vue'
@@ -11,6 +12,7 @@ import VPSidebarItem from './components/VPSidebarItem.vue'
 
 export default {
   extends: DefaultTheme,
+  Layout,
   enhanceApp({ app }) {
     app.component('GuideHeader', GuideHeader)
     app.component('GuideCard', GuideCard)
